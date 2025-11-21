@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETS2 1.57 Güncellemesi Detayı</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+body { background:#0b0b0b; font-family:'Inter',sans-serif; color:white; margin:0; padding:0; }
+a { color:#deb100; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+/* ÜST BAR */
+.top-bar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:65px;
+    background:rgba(0,0,0,0.85);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    z-index:1000;
+}
+.logo-area { display:flex; align-items:center; gap:15px; }
+.logo-area img { width:42px; height:42px; border-radius:50%; border:2px solid white; }
+.logo-text { font-size:22px; font-weight:700; color:white; }
+
+/* SOSYAL İKONLAR */
+.social {
+    position:fixed;
+    top:80px;
+    left:20px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    z-index:9999;
+}
+.social img {
+    width:28px;
+    height:28px;
+    filter:invert(1);
+    opacity:0.8;
+    cursor:pointer;
+    transition:0.2s;
+}
+.social img:hover { transform:scale(1.15); opacity:1; }
+
+/* HABER DETAYI */
+main {
+    max-width:900px;
+    margin:100px auto 50px;
+    padding:30px;
+    background:#111;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+main h1 { font-size:32px; margin-bottom:20px; }
+main ul { margin-left:20px; color:#ccc; line-height:1.8; }
+main li { margin-bottom:8px; }
+main a.button {
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#ffcc00;
+    color:black;
+    font-weight:bold;
+    border-radius:8px;
+    transition:0.2s;
+}
+main a.button:hover { background:#e6b800; }
+</style>
+</head>
+<body>
+
+<!-- ÜST BAR -->
+<div class="top-bar">
+    <div class="logo-area">
+        <img src="Reverse.png" alt="Logo">
+        <span class="logo-text">Reverse Jetcilik</span>
+    </div>
+</div>
+
+<!-- SOSYAL İKONLAR -->
+<div class="social">
+    <a href="https://www.instagram.com/imreverse_/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg"></a>
+    <a href="https://www.youtube.com/@reverse_010" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg"></a>
+    <a href="https://discord.gg/6MSdUd44" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg"></a>
+</div>
+
+<!-- HABER DETAYI -->
+<main>
+    <h1>🚚 ETS2 1.57 Güncellemesiyle Beraber Gelen Herşey</h1>
+    <ul>
+        <li>Scania 770S</li>
+        <li>Scania Kör Nokta Sistemi</li>
+        <li>Led Stop Farlar</li>
+        <li>Yepyeni V8 Sesi</li>
+        <li>Scania SUPER</li>
+        <li>Scania Özel Kaplamalar</li>
+        <li>Kabin Ayak Altı Aydınlatma</li>
+        <li>Scania Hayalet Ekran</li>
+    </ul>
+</main>
+
+</body>
+</html>
