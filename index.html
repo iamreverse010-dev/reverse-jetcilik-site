@@ -13,21 +13,69 @@
 body { background:#0b0b0b; font-family:'Inter',sans-serif; color:white; scroll-behavior: smooth; }
 
 /* ÜST BAR */
-.top-bar {
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:65px;
-    background:rgba(0,0,0,0.85);
-    backdrop-filter:blur(8px);
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 40px;
-    border-bottom:1px solid #222;
-    z-index:10000;
+/* MOBIL DÜZENLEMELER */
+@media (max-width: 600px) {
+
+    .top-bar {
+        padding: 0 15px;
+        height: 55px;
+        justify-content: space-between;
+    }
+
+    .logo-area img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .top-links {
+        display: none; /* Mobilde üst menüyü gizle (istersen hamburger menü ekleriz) */
+    }
+
+    header {
+        height: 250px;
+        padding-top: 55px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    .social {
+        top: 70px;
+        left: 10px;
+        gap: 12px;
+    }
+
+    .social img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .news-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .news-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-title {
+        font-size: 26px;
+    }
 }
+
 
 /* LOGO + PROFİL FOTO */
 .logo-area {
@@ -184,13 +232,14 @@ footer {
 <div class="top-bar">
     <div class="logo-area">
         <img src="Reverse.png" alt="Logo">
-        <span class="logo-text">Reverse Jetcilik</span>
+        <a href="https://reversejetcilik.netlify.app/" class="logo-text" style="color:white; text-decoration:none;">Reverse Jetcilik</a>
+
         
     </div>
     <div class="top-links">
         <a href="#haberler">Haberler</a>
         <a href="yardim.html" target="_blank">Yardım Merkezi</a>
-        <a class="vtc-btn" href="https://truckersmp.com/vtc/84483" target="_blank">VTC'mize Katılın</a>
+        <a class="vtc-btn" href="https://truckersmp.com/vtc/84483" target="_blank">VTC'mize Katılın</a>    
     </div>
 </div>
 
@@ -260,6 +309,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
